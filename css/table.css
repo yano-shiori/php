@@ -1,0 +1,125 @@
+.table {
+  border-collapse: collapse;
+  border-color: gray;
+  width: 100%;
+  font-size: 14px;
+}
+.table input {
+  margin-bottom: 0;
+}
+.table__wrapper {
+  width: 95%;
+  max-width: 1280px;
+  margin: 40px auto;
+}
+.table td:not(.data__id),
+.table th:not(.data__id) {
+  padding: 4px 6px;
+}
+.table th {
+  background-color: #ccc;
+}
+.table .data {
+  height: 150px;
+}
+.table .data__id {
+  max-width: 30px;
+}
+.table .data__id input {
+  text-align: center;
+  display: inline-block;
+  max-width: 100%;
+}
+.table .data__center {
+  text-align: center;
+}
+.table .data__body {
+  max-width: 200px;
+}
+.table .data__body div {
+  overflow-y: scroll;
+}
+.table .strlong {
+  word-wrap: break-word;
+  height: 100%;
+  overflow-x: scroll;
+}
+.table .data:not(.data__body) div {
+  display: flex;
+  align-items: center;
+}
+.table .data__name,
+.table .data__kana,
+.table .data__email {
+  max-width: 150px;
+}
+.table .data__tel {
+  max-width: 60px;
+}
+.table .data__time {
+  max-width: 70px;
+}
+
+.btn--edit,
+.btn--delete {
+  max-width: 30px;
+}
+
+@media screen and (min-width: 1025px) {
+  .table__wrapper {
+    width: 99%;
+  }
+}
+.u--blue {
+  text-decoration: underline;
+  color: blue;
+  font-weight: bold;
+}
+
+.delete {
+  text-align: center;
+}
+.delete .btn {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.edit th,
+.edit .d_type {
+  text-align: center;
+  width: 10%;
+  min-width: 100px;
+  max-width: 120px;
+}
+.edit .btn-area {
+  margin-top: 40px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error__container {
+  text-align: center;
+}
+.error__container h1 {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.error__container .btn {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edit__complete {
+  text-align: center;
+}
+.edit__complete .btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+/*# sourceMappingURL=table.css.map */

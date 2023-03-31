@@ -1,0 +1,129 @@
+.table {
+	border-collapse: collapse;
+	border-color: gray;
+	width: 100%;
+	font-size: 14px;
+	input {
+		margin-bottom: 0;
+	}
+	&__wrapper {
+		width: 95%;
+		max-width: 1280px;
+		margin: 40px auto;
+	}
+	td:not(.data__id),
+	th:not(.data__id) {
+		padding: 4px 6px;
+	}
+	th {
+		background-color: #ccc;
+	}
+	.data {
+		height: 150px;
+	}
+	.data__id {
+		max-width: 30px;
+		input {
+			text-align: center;
+			display: inline-block;
+			max-width: 100%;
+		}
+	}
+	.data__center {
+		text-align: center;
+	}
+	.data__body {
+		max-width: 200px;
+		div {
+			overflow-y: scroll;
+		}
+	}
+	.strlong {
+		word-wrap: break-word;
+		height: 100%;
+		overflow-x: scroll;
+	}
+	.data:not(.data__body) div {
+		display: flex;
+		align-items: center;
+	}
+	.data__name,
+	.data__kana,
+	.data__email {
+		max-width: 150px;
+	}
+	.data__tel {
+		max-width: 60px;
+	}
+	.data__time {
+		max-width: 70px;
+	}
+}
+
+.btn--edit,
+.btn--delete {
+	max-width: 30px;
+}
+
+@media screen and (min-width: 1025px) {
+	.table {
+		&__wrapper {
+			width: 99%;
+		}
+	}
+}
+
+.u--blue {
+	text-decoration: underline;
+	color: blue;
+	font-weight: bold;
+}
+
+.delete {
+	text-align: center;
+	.btn {
+		max-width: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+	}
+}
+
+.edit {
+	th,
+	.d_type {
+		text-align: center;
+		width: 10%;
+		min-width: 100px;
+		max-width: 120px;
+	}
+	.btn-area {
+		margin-top: 40px;
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.error__container {
+	text-align: center;
+	h1 {
+		color: red;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+	.btn {
+		margin-top: 40px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.edit__complete {
+	text-align: center;
+	.btn {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+	}
+}

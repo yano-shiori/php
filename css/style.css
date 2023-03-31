@@ -1,0 +1,302 @@
+@charset "UTF-8";
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+		"Hiragino Sans", Meiryo, sans-serif;
+	font-size: 1rem;
+	color: #333;
+	line-height: 1.5;
+}
+
+.textlink {
+	color: #333;
+}
+
+.textlink2 {
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.inner {
+	width: 92.5%;
+	margin: 0 auto;
+	max-width: 1440px;
+}
+
+.inner-small {
+	max-width: 1280px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.logo {
+	font-weight: bold;
+}
+.logo .textlink,
+.logo .textlink2 {
+	font-size: 2.5rem;
+	text-transform: capitalize;
+}
+
+.label__acc {
+	background-color: rgb(240, 166, 82);
+	color: #fff;
+	margin-right: 4px;
+	padding: 4px;
+	border-radius: 4px;
+}
+
+dl {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 369px;
+}
+
+@media screen and (min-width: 1025px) {
+	.pc-hide {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 861px) and (max-width: 1024px) {
+	.sp-hide {
+		display: none;
+	}
+}
+@media screen and (max-width: 860px) {
+	.sp-hide {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.xs-hide {
+		display: none;
+	}
+}
+
+/*===============================
+	  フォーム
+  ================================*/
+textarea {
+	min-width: 248px;
+	max-height: 800px;
+	min-height: 320px;
+	resize: both;
+}
+@media screen and (max-width: 860px) {
+	textarea {
+		max-width: 98%;
+	}
+}
+
+label {
+	display: inline-block;
+	min-width: 100px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+	padding: 6px;
+	border: 1px solid rgb(139, 139, 139);
+	border-radius: 4px;
+	width: 100%;
+	margin-top: 8px;
+}
+
+input[type="date"] {
+	width: 120px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.btn {
+	border-radius: 8px;
+	letter-spacing: 1em;
+	text-indent: 1em;
+	font-size: 1.25rem;
+}
+.btn__submit {
+	background-color: rgb(240, 166, 82);
+	color: #fff;
+	padding: 8px;
+	border-radius: 8px;
+	letter-spacing: 1em;
+	font-size: 1.25rem;
+	padding: 8px;
+}
+.btn__return {
+	border: 1px solid rgb(139, 139, 139);
+	padding: 0;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 350px;
+}
+
+.return_value {
+	font-size: 1.1rem;
+	margin-bottom: 24px;
+}
+
+.label--confirm {
+	padding-left: 4px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid rgb(139, 139, 139);
+}
+
+.error-php {
+	color: red;
+}
+
+.form-info {
+	width: 100%;
+	margin: 24px 0;
+}
+
+.totop {
+	font-size: 1.2rem;
+	color: #333;
+}
+
+.btn-area {
+	display: flex;
+	width: 100%;
+	column-gap: 40px;
+}
+.btn-area .btn {
+	width: 50%;
+}
+
+.header .textlink,
+.footer .textlink {
+	text-transform: capitalize;
+}
+.header .nav,
+.footer .nav {
+	display: flex;
+}
+.header .list,
+.footer .list {
+	display: flex;
+}
+
+.header {
+	background-color: rgb(85, 85, 85);
+	color: #fff;
+	padding: 16px 0;
+}
+.header .textlink {
+	color: #fff;
+}
+.header .nav {
+	align-items: center;
+	justify-content: space-between;
+}
+.header .list {
+	column-gap: clamp(
+		16 * 1px,
+		calc(
+			calc((40 - 16) / (1920 - 375)) * 100vw +
+				calc(16 - calc((40 - 16) / (1920 - 375)) * 375) * 1px
+		),
+		40 * 1px
+	);
+}
+.header .logo {
+	font-size: 1.875rem;
+}
+
+.main {
+	padding: 64px 0 100px 0;
+}
+.main .inner-small {
+	border: 1px solid rgb(139, 139, 139);
+	padding: 24px 0;
+	border-radius: 16px;
+}
+.main h1 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+}
+.main .form {
+	padding-inline: 56px;
+	margin-top: 24px;
+	border-top: 1px solid rgb(139, 139, 139);
+}
+.form-info {
+	margin: 24px 0;
+}
+.main input,
+.main textarea {
+	margin-bottom: 24px;
+}
+
+.footer {
+	background-color: rgb(85, 85, 85);
+	color: #fff;
+	padding: 40px 0;
+}
+.footer .inner {
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+}
+.footer__nav .list,
+.footer__info {
+	display: flex;
+}
+.footer__info {
+	flex-direction: column;
+	margin: 0 auto;
+}
+.footer__nav .list {
+	justify-content: space-between;
+	padding-inline: 2.5%;
+	font-size: 1.125rem;
+}
+
+@media screen and (min-width: 1025px) {
+	dl {
+		max-width: 100%;
+	}
+	.footer {
+		padding: 80px 0;
+	}
+	.footer .inner {
+		flex-direction: row;
+		justify-content: space-between;
+		column-gap: 5%;
+	}
+	.footer__info {
+		width: 375px;
+		margin-left: 0;
+	}
+	.footer__nav {
+		width: 240px;
+	}
+	.footer__nav .list {
+		width: 100%;
+		flex-direction: column;
+		margin-top: 32px;
+		row-gap: 16px;
+	}
+	.footer__nav .item {
+		border-bottom: 1px solid #000;
+	}
+	.footer__nav .list .textlink {
+		display: inline-block;
+		width: 100%;
+	}
+}
